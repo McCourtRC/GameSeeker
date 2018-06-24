@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Oswald-Medium.ttf">
+            <string>Oswald-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameSectionHeaderViewController" customModule="GameSeeker" customModuleProvider="target">
+            <connections>
+                <outlet property="titleLabel" destination="S2r-xC-Fza" id="V42-M2-tYK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In 2 weeks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2r-xC-Fza">
+                    <rect key="frame" x="16" y="0.0" width="343" height="81"/>
+                    <fontDescription key="fontDescription" name="Oswald-Medium" family="Oswald" pointSize="17"/>
+                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gox-IF-8dv" userLabel="Black">
+                    <rect key="frame" x="0.0" y="77" width="375" height="4"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="roG-g3-5yj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKa-00-dRw" userLabel="Red">
+                    <rect key="frame" x="0.0" y="78" width="375" height="3"/>
+                    <color key="backgroundColor" name="primary-red"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="mX6-aN-bnw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.15294117647058825" green="0.16470588235294117" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gox-IF-8dv" firstAttribute="bottom" secondItem="CKa-00-dRw" secondAttribute="bottom" id="7Ej-j5-jCo"/>
+                <constraint firstItem="CKa-00-dRw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9OJ-YY-ziq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gox-IF-8dv" secondAttribute="bottom" id="Afq-fn-KYw"/>
+                <constraint firstItem="S2r-xC-Fza" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="GOB-aS-xea"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="S2r-xC-Fza" secondAttribute="bottom" id="Ikh-fA-4dc"/>
+                <constraint firstItem="gox-IF-8dv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YjS-ys-uBD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="S2r-xC-Fza" secondAttribute="trailing" constant="16" id="akw-JC-Vqm"/>
+                <constraint firstItem="S2r-xC-Fza" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ePa-9g-8OX"/>
+                <constraint firstAttribute="trailing" secondItem="gox-IF-8dv" secondAttribute="trailing" id="qpx-Ac-wRT"/>
+                <constraint firstItem="CKa-00-dRw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="w1B-6U-veX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="-239.5"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="primary-red">
+            <color red="0.69803921568627447" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
